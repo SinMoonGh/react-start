@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 function Hello({number}) {
     const list = number.map((number) => <h3 style={{color:number}}>{number}</h3>)
     return (        
@@ -24,6 +26,41 @@ export function CoinGame(){
         
         </>
     );       
+}
+
+function ClickEvent(num) {
+    num += 1
+    console.log(num)    
+}
+
+export function Click() {
+    const [num, setNum] = useState(0);
+    
+    const NumberUp = () => {
+        // num += 1
+        setNum(num => num + 1)
+        console.log(num)
+    }
+
+    return (
+        <>
+        <button onClick={NumberUp}>Click me {num}</button>
+        </>
+    );
+}
+
+function SubmitEvent(params) {
+    params.preventDefault();
+    console.log("새로고침")
+}
+
+export function Submit(params) {
+    
+    return (
+        <form onSubmit={SubmitEvent}>
+            <button>Submit</button>
+        </form>        
+    );
 }
 
 export default Hello

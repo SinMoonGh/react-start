@@ -10,7 +10,7 @@ export default function SlotMachine(params) {
         <>
         <h1>{slot_1} {slot_2} {slot_3}</h1>
 
-        {isJackpot ? <h3>축하합니다.</h3> : <h3>다시 도전하세요</h3>}
+        {isJackpot ? <h3 style={{color:"green"}}>축하합니다.</h3> : <h3 style={{color:"blue"}}>다시 도전하세요</h3>}
         {}        
         </>
     );
