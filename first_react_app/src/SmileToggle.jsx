@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 
-export default function SmileTogle(params) {
-    // countenance 값이 true 일 때 ^^
-    // countenance 값이 false 일 때 ><
+export default function SmileTogle({togle}) {
+    
     const [countenance, setCountenance] = useState("true");
     const ChangeCountenance = () => setCountenance(!countenance)
 

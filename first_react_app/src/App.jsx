@@ -9,17 +9,16 @@ import Item  from './items'
 import Accommodation from './Accommodation'
 import SmileTogle from './SmileToggle'
 import ColorBox from './ColorBox'
+import Score from './Score'
+import RandomTogle from './RandomToggle'
+import ToggleClone from './ToggleClone'
+import Scoreboard from './Scoreboard'
+
 
 function App() {  
   return (
     <>
-      <ColorBox colors = {[
-        "#32CD32",
-        "#FF6347",
-        "#FFDAB9",
-        "#6B8E23",
-        "#87CEFA",
-      ]}/>
+      <Scoreboard user = {5} winScore={3}/>
     </>
   );
 }
